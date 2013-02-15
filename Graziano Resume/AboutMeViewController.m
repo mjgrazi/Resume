@@ -1,18 +1,18 @@
 //
-//  SecondViewController.m
+//  FirstViewController.m
 //  Graziano Resume
 //
 //  Created by Mike Graziano on 2/3/13.
 //  Copyright (c) 2013 Mike Graziano. All rights reserved.
 //
 
-#import "SecondViewController.h"
+#import "AboutMeViewController.h"
 
-@interface SecondViewController ()
+@interface AboutMeViewController ()
 
 @end
 
-@implementation SecondViewController
+@implementation AboutMeViewController
 
 - (void)viewDidLoad
 {

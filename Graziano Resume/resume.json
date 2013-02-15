@@ -1,0 +1,109 @@
+[
+  {
+    "Jobs" : [
+      {
+        "Responsibilities" : [
+          "Worked on a high visibility project implementing the next-generation Vanguard trading platform",
+          "Interpreted, refactored, and re-wrote old code to work with the new architecture",
+          "Utilized Drools to integrate business rules into the trading infrastructure"
+        ],
+        "Name" : "The Vanguard Group",
+        "Dates" : "Aug 2012-Present",
+        "Title" : "Midtier Java Developer",
+        "Image" : "vanguard.png"
+      },
+      {
+        "Responsibilities" : [
+          "Worked directly with designers and business on a small team to quickly deliver an iPad app using much of the existing iPhone code, both native and back-end",
+          "Implemented proof of concept designs for new features using native APIs, including Core Data, block programming, and Grand Central Dispatch",
+          "Managed a group of interns who started with no iOS experience, and delivered two major features within the next 10 weeks",
+          "Implemented new features, including brokerage trading, to the existing iPhone app, as well as provided maintenance, issue management, and OS/device compatibility with new releases",
+          "Developed pages that could be displayed in webviews on any mobile platform using HTML, CSS, and Javascript, and implemented the interaction between the native and webview code"
+        ],
+        "Name" : "The Vanguard Group",
+        "Dates" : "Feb 2011-July 2012",
+        "Title" : "iOS Developer",
+        "Image" : "vanguard.png"
+      },
+      {
+        "Responsibilities" : [
+          "Provided maintenence and issue support on a large-scale control system for a government agency",
+          "Held TS/SCI clearance and passed a single scope background investigation"
+        ],
+        "Name" : "Lockheed Martin",
+        "Dates" : "July 2009-Dec 2010",
+        "Title" : "Software Engineer",
+        "Image" : "lockheed.png"
+      },
+      {
+        "Responsibilities" : [
+          "Tested firmware updates for existing products as well as new software and firmware for products in development",
+          "Developed automated tests using Perl and Python to run more repetitive tests, allowing more time to be spent on more important test efforts"
+        ],
+        "Name" : "Bose Corporation",
+        "Dates" : "June 2008-Nov 2008",
+        "Title" : "Software Test Intern",
+        "Image" : "bose.png"
+      },
+      {
+        "Responsibilities" : [
+          "Researched new and emerging technologies and their potential application to future products",
+          "Investigated usability aspects of new and existing photo software for average computer users",
+          "Worked with patent experts to take new or existing technologies in new directions",
+          "Used an open source library for a Wii controller to develop a prototype gesture-based interface for assisting a facial recognition algorithm",
+          "Designed and implemented an interface for gesture-based facial recognition sorting",
+          "Gained technical writing, public speaking and C# development experience"
+        ],
+        "Name" : "Eastman Kodak",
+        "Dates" : "March 2007-May 2008",
+        "Title" : "Software R&D Intern",
+        "Image" : "kodak.png"
+      }
+    ],
+    "Education" : [
+      {
+        "School" : "Rochester Institute of Technology",
+        "Degree" : "B.S., Computer Engineering Technology",
+        "GPA" : "3.087",
+        "Abbreviation" : "RIT",
+        "Website" : "http://www.rit.edu/cast/ectet/bs-in-computer-engineering-technology.php",
+        "GradYear" : "2009",
+        "City" : "Rochester, NY"
+      }
+    ],
+    "Skills" : {
+      "Software" : [
+        "Xcode",
+        "IntelliJ IDEA",
+        "MAMP/LAMP",
+        "Eclipse",
+        "Coda 2 "
+      ],
+      "Languages" : [
+        "Objective C",
+        "Groovy/Grails",
+        "Java",
+        "Javascript",
+        "JQuery",
+        "HTML",
+        "CSS",
+        "C#",
+        "C"
+      ],
+      "Data" : [
+        "Core Data",
+        "RESTful web services",
+        "JSON",
+        "XML",
+        "MySQL",
+        "SQLite"
+      ],
+      "Operating Systems" : [
+        "Mac OSX",
+        "Windows",
+        "Solaris UNIX",
+        "Ubuntu Linux"
+      ]
+    }
+  }
+]

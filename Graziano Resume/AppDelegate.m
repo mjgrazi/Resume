@@ -7,12 +7,13 @@
 //
 
 #import "AppDelegate.h"
+#import "DataHandler.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    [DataHandler publicDataHandler];
     return YES;
 }
 							
