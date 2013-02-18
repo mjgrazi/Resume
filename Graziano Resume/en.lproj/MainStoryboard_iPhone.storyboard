@@ -4,12 +4,117 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
+        <!--About Me View Controller - About-->
+        <scene sceneID="2Fd-l4-637">
+            <objects>
+                <viewController id="Zxt-6M-wiC" customClass="AboutMeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NaZ-9n-Z7c">
+                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" translatesAutoresizingMaskIntoConstraints="NO" id="EWp-Nt-dEy">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="yeX-HD-eRj"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="About Me" id="yAx-jo-CGE"/>
+                                </items>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="wallpaper.png" translatesAutoresizingMaskIntoConstraints="NO" id="gHV-gW-G7I"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="6vW-jl-AdG">
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AboutHeaderCell" id="SsJ-yl-FQk" customClass="AboutHeaderCell">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Header Text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mAi-cb-8Sq">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="0gW-ES-aJv"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="mAi-cb-8Sq" secondAttribute="trailing" constant="20" type="default" id="9CG-a1-Ybz"/>
+                                            <constraint firstItem="mAi-cb-8Sq" firstAttribute="leading" secondItem="SsJ-yl-FQk" secondAttribute="leading" constant="20" type="default" id="lzv-RC-qrD"/>
+                                            <constraint firstItem="mAi-cb-8Sq" firstAttribute="top" secondItem="SsJ-yl-FQk" secondAttribute="top" constant="11" id="yjf-FF-jdf"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="headerLabel" destination="mAi-cb-8Sq" id="owW-72-0tx"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AboutDetailCell" id="hSC-d6-7AW" customClass="AboutDetailCell">
+                                        <rect key="frame" x="0.0" y="66" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Details text" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="VRx-Yx-1Fe">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="1000" type="user" id="q2u-K8-OzD"/>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" type="user" id="vIr-gj-lFB"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="VRx-Yx-1Fe" firstAttribute="top" secondItem="hSC-d6-7AW" secondAttribute="top" constant="11" id="NXb-DQ-sdE"/>
+                                            <constraint firstItem="VRx-Yx-1Fe" firstAttribute="leading" secondItem="hSC-d6-7AW" secondAttribute="leading" constant="20" type="default" id="RiM-DB-AYs"/>
+                                            <constraint firstAttribute="trailing" secondItem="VRx-Yx-1Fe" secondAttribute="trailing" constant="20" type="default" id="k7z-wq-vYC"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="answerLabel" destination="VRx-Yx-1Fe" id="Qj4-Ng-L4f"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Zxt-6M-wiC" id="jbS-O2-hQf"/>
+                                    <outlet property="delegate" destination="Zxt-6M-wiC" id="m2K-9G-Xvu"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EWp-Nt-dEy" firstAttribute="top" secondItem="NaZ-9n-Z7c" secondAttribute="top" type="default" id="1CH-a2-cmG"/>
+                            <constraint firstItem="6vW-jl-AdG" firstAttribute="trailing" secondItem="NaZ-9n-Z7c" secondAttribute="trailing" type="default" id="7DQ-i2-Kf8"/>
+                            <constraint firstItem="6vW-jl-AdG" firstAttribute="top" secondItem="EWp-Nt-dEy" secondAttribute="bottom" type="default" id="Dnb-Xd-VKV"/>
+                            <constraint firstItem="gHV-gW-G7I" firstAttribute="leading" secondItem="NaZ-9n-Z7c" secondAttribute="leading" type="default" id="FDM-T8-C9e"/>
+                            <constraint firstItem="EWp-Nt-dEy" firstAttribute="trailing" secondItem="NaZ-9n-Z7c" secondAttribute="trailing" type="default" id="P93-Rm-Wat"/>
+                            <constraint firstItem="gHV-gW-G7I" firstAttribute="bottom" secondItem="NaZ-9n-Z7c" secondAttribute="bottom" type="default" id="QoB-aU-3ZT"/>
+                            <constraint firstItem="EWp-Nt-dEy" firstAttribute="leading" secondItem="NaZ-9n-Z7c" secondAttribute="leading" type="default" id="U1J-h0-o6m"/>
+                            <constraint firstItem="6vW-jl-AdG" firstAttribute="leading" secondItem="NaZ-9n-Z7c" secondAttribute="leading" type="default" id="Ysp-b3-n5c"/>
+                            <constraint firstItem="6vW-jl-AdG" firstAttribute="bottom" secondItem="NaZ-9n-Z7c" secondAttribute="bottom" type="default" id="csi-dd-Iyq"/>
+                            <constraint firstItem="6vW-jl-AdG" firstAttribute="top" secondItem="gHV-gW-G7I" secondAttribute="top" type="default" id="vCk-iA-8xp"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="About" image="111-user.png" id="ke3-IN-BW3"/>
+                    <connections>
+                        <outlet property="tableView" destination="6vW-jl-AdG" id="Y9C-Fh-nLQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7af-y5-N1X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="669" y="-924"/>
+        </scene>
         <!--About Me View Controller - First-->
         <scene sceneID="11">
             <objects>
                 <viewController title="First" id="2" customClass="AboutMeViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="16">
-                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="wallpaper.png" translatesAutoresizingMaskIntoConstraints="NO" id="TtK-Tk-bVI">
@@ -407,7 +512,7 @@ Software is just one of my passions. I also enjoy many sports, especially curlin
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="2" kind="relationship" relationship="viewControllers" id="26"/>
+                        <segue destination="Zxt-6M-wiC" kind="relationship" relationship="viewControllers" id="1Fy-87-rGh"/>
                         <segue destination="Ssd-zv-dng" kind="relationship" relationship="viewControllers" id="l8O-6f-aOX"/>
                         <segue destination="TaX-tE-ZVG" kind="relationship" relationship="viewControllers" id="NDX-QO-DTS"/>
                         <segue destination="ts8-Qv-K6n" kind="relationship" relationship="viewControllers" id="Kta-KD-Kex"/>
@@ -586,8 +691,23 @@ Software is just one of my passions. I also enjoy many sports, especially curlin
         <image name="wallpaper.png" width="320" height="480"/>
     </resources>
     <classes>
+        <class className="AboutDetailCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AboutDetailCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="answerLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="AboutHeaderCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AboutHeaderCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="headerLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
         <class className="AboutMeViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AboutMeViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+            </relationships>
         </class>
         <class className="ContactViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ContactViewController.h"/>

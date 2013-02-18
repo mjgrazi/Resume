@@ -9,6 +9,7 @@
 #import "EmploymentDetailViewController.h"
 #import "ResponsibilitiesCell.h"
 #import "Job.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface EmploymentDetailViewController ()
 
@@ -36,6 +37,7 @@
     [self.companyLogo setImage:logoFromFile];
     NSMutableArray *resp = (NSMutableArray *)[self.theJob valueForKey:@"Responsibilities"];
     [self setResponsibilitiesArray:resp];
+    [self.responsibilitiesTable.layer setBorderWidth:1];
 }
 
 - (void)didReceiveMemoryWarning

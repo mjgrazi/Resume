@@ -19,6 +19,7 @@
 		8D2F354A16C9C0D000E97FAD /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D2F354316C9C0D000E97FAD /* Icon@2x.png */; };
 		8D2F354C16C9C13C00E97FAD /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D2F354B16C9C13C00E97FAD /* Icon.png */; };
 		8D2F354E16C9C14200E97FAD /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D2F354D16C9C14200E97FAD /* Icon@2x.png */; };
+		8D32C25C16D148E7002679DA /* AboutHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D32C25B16D148E7002679DA /* AboutHeaderCell.m */; };
 		8D38DD4316BF134D0069AB47 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D38DD4216BF134D0069AB47 /* UIKit.framework */; };
 		8D38DD4516BF134D0069AB47 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D38DD4416BF134D0069AB47 /* Foundation.framework */; };
 		8D38DD4716BF134D0069AB47 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D38DD4616BF134D0069AB47 /* CoreGraphics.framework */; };
@@ -60,6 +61,7 @@
 		8DDD328016C416F3003F09FE /* ResponsibilitiesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DDD327F16C416F3003F09FE /* ResponsibilitiesCell.m */; };
 		8DDD328316C4A90C003F09FE /* 75-phone.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DDD328116C4A90C003F09FE /* 75-phone.png */; };
 		8DDD328416C4A90C003F09FE /* 75-phone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DDD328216C4A90C003F09FE /* 75-phone@2x.png */; };
+		8DDFC0FE16D1872A00E02586 /* AboutDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DDFC0FD16D1872A00E02586 /* AboutDetailCell.m */; };
 		8DF910FC16CC89530082CE3A /* SkillsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DF910FB16CC89530082CE3A /* SkillsViewController.m */; };
 		8DF910FF16CD9BDB0082CE3A /* DataHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DF910FE16CD9BDB0082CE3A /* DataHandler.m */; };
 /* End PBXBuildFile section */
@@ -88,6 +90,8 @@
 		8D2F354316C9C0D000E97FAD /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		8D2F354B16C9C13C00E97FAD /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		8D2F354D16C9C14200E97FAD /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		8D32C25A16D148E7002679DA /* AboutHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutHeaderCell.h; sourceTree = "<group>"; };
+		8D32C25B16D148E7002679DA /* AboutHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutHeaderCell.m; sourceTree = "<group>"; };
 		8D38DD3F16BF134D0069AB47 /* Grázumé.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Grázumé.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D38DD4216BF134D0069AB47 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8D38DD4416BF134D0069AB47 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -140,6 +144,8 @@
 		8DDD327F16C416F3003F09FE /* ResponsibilitiesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponsibilitiesCell.m; sourceTree = "<group>"; };
 		8DDD328116C4A90C003F09FE /* 75-phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "75-phone.png"; sourceTree = "<group>"; };
 		8DDD328216C4A90C003F09FE /* 75-phone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "75-phone@2x.png"; sourceTree = "<group>"; };
+		8DDFC0FC16D1872A00E02586 /* AboutDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutDetailCell.h; sourceTree = "<group>"; };
+		8DDFC0FD16D1872A00E02586 /* AboutDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutDetailCell.m; sourceTree = "<group>"; };
 		8DF910FA16CC89530082CE3A /* SkillsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkillsViewController.h; sourceTree = "<group>"; };
 		8DF910FB16CC89530082CE3A /* SkillsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkillsViewController.m; sourceTree = "<group>"; };
 		8DF910FD16CD9BDB0082CE3A /* DataHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataHandler.h; sourceTree = "<group>"; };
@@ -223,6 +229,10 @@
 				8DF910FB16CC89530082CE3A /* SkillsViewController.m */,
 				8DDD326216C1EFED003F09FE /* EmploymentCell.h */,
 				8DDD326316C1EFED003F09FE /* EmploymentCell.m */,
+				8D32C25A16D148E7002679DA /* AboutHeaderCell.h */,
+				8D32C25B16D148E7002679DA /* AboutHeaderCell.m */,
+				8DDFC0FC16D1872A00E02586 /* AboutDetailCell.h */,
+				8DDFC0FD16D1872A00E02586 /* AboutDetailCell.m */,
 				8DDD327E16C416F2003F09FE /* ResponsibilitiesCell.h */,
 				8DDD327F16C416F3003F09FE /* ResponsibilitiesCell.m */,
 				8DDD326516C208DD003F09FE /* Job.h */,
@@ -453,6 +463,8 @@
 				8D2F353C16C95DBB00E97FAD /* ContactViewController.m in Sources */,
 				8DF910FC16CC89530082CE3A /* SkillsViewController.m in Sources */,
 				8DF910FF16CD9BDB0082CE3A /* DataHandler.m in Sources */,
+				8D32C25C16D148E7002679DA /* AboutHeaderCell.m in Sources */,
+				8DDFC0FE16D1872A00E02586 /* AboutDetailCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

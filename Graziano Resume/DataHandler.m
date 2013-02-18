@@ -16,7 +16,7 @@
 
 @end
 
-#define RESUME_URL @"http://www.nsgraz.com/json/resume"
+#define RESUME_URL @"http://www.nsgraz.com/json/resumeNIL"
 #define LOCAL_FILENAME @"resume"
 #define LOCAL_FILETYPE @"json"
 

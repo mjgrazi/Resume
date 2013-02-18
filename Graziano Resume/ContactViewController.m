@@ -8,9 +8,12 @@
 
 #import <MessageUI/MFMailComposeViewController.h>
 #import "ContactViewController.h"
+#import "DataHandler.h"
 
 @interface ContactViewController ()
 
+@property (strong, nonatomic) NSArray *contactArray;
+@property (strong, nonatomic) NSMutableArray *cellTypes;
 
 @end
 
@@ -27,6 +30,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self setContactArray:(NSArray *)[[DataHandler publicDataHandler] getResumeDataForKey:@"Contact"]];
+    self.cellTypes = [[NSMutableArray alloc] initWithCapacity:[self.contactArray count]];
 }
 
 - (void)didReceiveMemoryWarning
@@ -44,27 +49,20 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    if (section == 0) {
-        return 2;
-    } else return 0;
+    return [self.contactArray count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"ContactCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+
+    NSDictionary *contactDict = [self.contactArray objectAtIndex:indexPath.row];
+    [cell.textLabel setText:[contactDict valueForKey:@"Method"]];
+    [cell.detailTextLabel setText:[contactDict valueForKey:@"Value"]];
     
-    if (indexPath.section == 0)
-    {
-        if (indexPath.row == 0)
-        {
-            [cell.detailTextLabel setText:@"215-520-1747"];
-            [cell.textLabel setText:@"Cell"];
-        } else if (indexPath.row == 1)
-        {
-            [cell.detailTextLabel setText:@"mjgrazi@gmail.com"];
-            [cell.textLabel setText:@"e-mail"];
-        }
+    if ([(NSString *)[contactDict objectForKey:@"Method"] isEqualToString:@"Phone"]) {
+        [self.cellTypes insertObject:@"phone" atIndex:indexPath.row];
     }
     
     return cell;
@@ -76,7 +74,7 @@
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    if (indexPath.row == 0) {
+    if ([[self.cellTypes objectAtIndex:indexPath.row] isEqualToString:@"phone"]) {
         UIDevice *device = [UIDevice currentDevice];
         if ([[device model] isEqualToString:@"iPhone"] ) {
             [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel:215-520-1747"]]];
@@ -84,9 +82,7 @@
             UIAlertView *Notpermitted=[[UIAlertView alloc] initWithTitle:@"Alert" message:@"Calling." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
             [Notpermitted show];
         }
-    } else if(indexPath.row == 1) {
-        //Write code to send email from within app
-    }
+    } 
 }
 
 //- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {

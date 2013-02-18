@@ -1,5 +1,68 @@
 [
   {
+    "About" : [
+      {
+        "Question" : "Who am I?",
+        "Answer" : "I am, at heart, a problem solver. It's easy to see how this led me to software development. I love solving problems with software, whether it involves a simple script to streamline the execution of commands in a terminal or developing a system of analysis to find patterns and trends in stock prices. The latter is the basis of my current personal project."
+      },
+      {
+        "Question" : "What am I looking for?",
+        "Answer" : "I am seeking an opportunity to develop easy to use and visually attractive apps and services that help people solve not only problems for which they are seeking a solution, but also problems they did not know they had. "
+      },
+      {
+        "Question" : "Why iOS?",
+        "Answer" : "When I bought my first iPhone in 2008, there really weren't many apps that did everything I wanted them to. No matter how good an app was, it always seemed to be missing a feature that I wanted. Always looking to learn new skills, I took the dive into the Apple ecosystem and found that I loved just about every aspect of iOS development."
+      },
+      {
+        "Question" : "More than just programming",
+        "Answer" : "Software is only one of my passions. I also enjoy many sports, especially curling, golf, and cycling. I enjoy craft beer and brew my own. Of course, like any other self-respecting geek, I enjoy the occasional videogame."
+      }
+    ],
+    "Education" : [
+      {
+        "School" : "Rochester Institute of Technology",
+        "Degree" : "B.S., Computer Engineering Technology",
+        "GPA" : "3.087",
+        "Abbreviation" : "RIT",
+        "Website" : "http://www.rit.edu/cast/ectet/bs-in-computer-engineering-technology.php",
+        "GradYear" : "2009",
+        "City" : "Rochester, NY"
+      }
+    ],
+    "Skills" : {
+      "Software" : [
+        "Xcode",
+        "IntelliJ IDEA",
+        "MAMP/LAMP",
+        "Eclipse",
+        "Coda 2 "
+      ],
+      "Languages" : [
+        "Objective C",
+        "Groovy/Grails",
+        "Java",
+        "Javascript",
+        "JQuery",
+        "HTML",
+        "CSS",
+        "C#",
+        "C"
+      ],
+      "Data" : [
+        "Core Data",
+        "RESTful web services",
+        "JSON",
+        "XML",
+        "MySQL",
+        "SQLite"
+      ],
+      "Operating Systems" : [
+        "Mac OSX",
+        "Windows",
+        "Solaris UNIX",
+        "Ubuntu Linux"
+      ]
+    },
     "Jobs" : [
       {
         "Responsibilities" : [
@@ -60,50 +123,27 @@
         "Image" : "kodak.png"
       }
     ],
-    "Education" : [
+    "Contact" : [
       {
-        "School" : "Rochester Institute of Technology",
-        "Degree" : "B.S., Computer Engineering Technology",
-        "GPA" : "3.087",
-        "Abbreviation" : "RIT",
-        "Website" : "http://www.rit.edu/cast/ectet/bs-in-computer-engineering-technology.php",
-        "GradYear" : "2009",
-        "City" : "Rochester, NY"
+        "Method" : "Phone",
+        "Value" : "215-520-1747"
+      },
+      {
+        "Method" : "Email",
+        "Value" : "mjgrazi@gmail.com"
+      },
+      {
+        "Method" : "LinkedIn",
+        "Value" : "http://www.linkedin.com/pub/michael-graziano/2a/2ba/2a9"
+      },
+      {
+        "Method" : "GitHub",
+        "Value" : "mjgrazi@gmail.com"
+      },
+      {
+        "Method" : "Website",
+        "Value" : "www.nsgraz.com"
       }
-    ],
-    "Skills" : {
-      "Software" : [
-        "Xcode",
-        "IntelliJ IDEA",
-        "MAMP/LAMP",
-        "Eclipse",
-        "Coda 2 "
-      ],
-      "Languages" : [
-        "Objective C",
-        "Groovy/Grails",
-        "Java",
-        "Javascript",
-        "JQuery",
-        "HTML",
-        "CSS",
-        "C#",
-        "C"
-      ],
-      "Data" : [
-        "Core Data",
-        "RESTful web services",
-        "JSON",
-        "XML",
-        "MySQL",
-        "SQLite"
-      ],
-      "Operating Systems" : [
-        "Mac OSX",
-        "Windows",
-        "Solaris UNIX",
-        "Ubuntu Linux"
-      ]
-    }
+    ]
   }
 ]
