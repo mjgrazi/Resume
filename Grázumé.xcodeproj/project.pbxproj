@@ -30,7 +30,6 @@
 		8D38DD5716BF134D0069AB47 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D38DD5616BF134D0069AB47 /* Default@2x.png */; };
 		8D38DD5916BF134D0069AB47 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D38DD5816BF134D0069AB47 /* Default-568h@2x.png */; };
 		8D38DD5C16BF134D0069AB47 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D38DD5A16BF134D0069AB47 /* MainStoryboard_iPhone.storyboard */; };
-		8D38DD5F16BF134E0069AB47 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D38DD5D16BF134E0069AB47 /* MainStoryboard_iPad.storyboard */; };
 		8D38DD6216BF134E0069AB47 /* AboutMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D38DD6116BF134E0069AB47 /* AboutMeViewController.m */; };
 		8D38DD6416BF134E0069AB47 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D38DD6316BF134E0069AB47 /* first.png */; };
 		8D38DD6616BF134E0069AB47 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D38DD6516BF134E0069AB47 /* first@2x.png */; };
@@ -61,7 +60,6 @@
 		8DDD328016C416F3003F09FE /* ResponsibilitiesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DDD327F16C416F3003F09FE /* ResponsibilitiesCell.m */; };
 		8DDD328316C4A90C003F09FE /* 75-phone.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DDD328116C4A90C003F09FE /* 75-phone.png */; };
 		8DDD328416C4A90C003F09FE /* 75-phone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8DDD328216C4A90C003F09FE /* 75-phone@2x.png */; };
-		8DDFC0FE16D1872A00E02586 /* AboutDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DDFC0FD16D1872A00E02586 /* AboutDetailCell.m */; };
 		8DF910FC16CC89530082CE3A /* SkillsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DF910FB16CC89530082CE3A /* SkillsViewController.m */; };
 		8DF910FF16CD9BDB0082CE3A /* DataHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DF910FE16CD9BDB0082CE3A /* DataHandler.m */; };
 /* End PBXBuildFile section */
@@ -106,7 +104,6 @@
 		8D38DD5616BF134D0069AB47 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		8D38DD5816BF134D0069AB47 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		8D38DD5B16BF134D0069AB47 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		8D38DD5E16BF134E0069AB47 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		8D38DD6016BF134E0069AB47 /* AboutMeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutMeViewController.h; sourceTree = "<group>"; };
 		8D38DD6116BF134E0069AB47 /* AboutMeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutMeViewController.m; sourceTree = "<group>"; };
 		8D38DD6316BF134E0069AB47 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
@@ -144,8 +141,6 @@
 		8DDD327F16C416F3003F09FE /* ResponsibilitiesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponsibilitiesCell.m; sourceTree = "<group>"; };
 		8DDD328116C4A90C003F09FE /* 75-phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "75-phone.png"; sourceTree = "<group>"; };
 		8DDD328216C4A90C003F09FE /* 75-phone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "75-phone@2x.png"; sourceTree = "<group>"; };
-		8DDFC0FC16D1872A00E02586 /* AboutDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutDetailCell.h; sourceTree = "<group>"; };
-		8DDFC0FD16D1872A00E02586 /* AboutDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutDetailCell.m; sourceTree = "<group>"; };
 		8DF910FA16CC89530082CE3A /* SkillsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkillsViewController.h; sourceTree = "<group>"; };
 		8DF910FB16CC89530082CE3A /* SkillsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkillsViewController.m; sourceTree = "<group>"; };
 		8DF910FD16CD9BDB0082CE3A /* DataHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataHandler.h; sourceTree = "<group>"; };
@@ -211,32 +206,10 @@
 		8D38DD4816BF134D0069AB47 /* Graziano Resume */ = {
 			isa = PBXGroup;
 			children = (
-				8DF910FD16CD9BDB0082CE3A /* DataHandler.h */,
-				8DF910FE16CD9BDB0082CE3A /* DataHandler.m */,
+				8DDFC10D16D3094100E02586 /* Data */,
+				8DDFC10C16D3091C00E02586 /* UI */,
 				8D38DD5116BF134D0069AB47 /* AppDelegate.h */,
 				8D38DD5216BF134D0069AB47 /* AppDelegate.m */,
-				8D38DD5A16BF134D0069AB47 /* MainStoryboard_iPhone.storyboard */,
-				8D38DD5D16BF134E0069AB47 /* MainStoryboard_iPad.storyboard */,
-				8D2F353A16C95DBB00E97FAD /* ContactViewController.h */,
-				8D2F353B16C95DBB00E97FAD /* ContactViewController.m */,
-				8D38DD6016BF134E0069AB47 /* AboutMeViewController.h */,
-				8D38DD6116BF134E0069AB47 /* AboutMeViewController.m */,
-				8D38DD6716BF134E0069AB47 /* ExperienceViewController.h */,
-				8D38DD6816BF134E0069AB47 /* ExperienceViewController.m */,
-				8DDD325F16C1BD0D003F09FE /* EmploymentDetailViewController.h */,
-				8DDD326016C1BD0D003F09FE /* EmploymentDetailViewController.m */,
-				8DF910FA16CC89530082CE3A /* SkillsViewController.h */,
-				8DF910FB16CC89530082CE3A /* SkillsViewController.m */,
-				8DDD326216C1EFED003F09FE /* EmploymentCell.h */,
-				8DDD326316C1EFED003F09FE /* EmploymentCell.m */,
-				8D32C25A16D148E7002679DA /* AboutHeaderCell.h */,
-				8D32C25B16D148E7002679DA /* AboutHeaderCell.m */,
-				8DDFC0FC16D1872A00E02586 /* AboutDetailCell.h */,
-				8DDFC0FD16D1872A00E02586 /* AboutDetailCell.m */,
-				8DDD327E16C416F2003F09FE /* ResponsibilitiesCell.h */,
-				8DDD327F16C416F3003F09FE /* ResponsibilitiesCell.m */,
-				8DDD326516C208DD003F09FE /* Job.h */,
-				8DDD326616C208DD003F09FE /* Job.m */,
 				8D38DD4916BF134D0069AB47 /* Supporting Files */,
 			);
 			path = "Graziano Resume";
@@ -272,6 +245,57 @@
 				8D38DD7D16BF134E0069AB47 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8DDFC10A16D3083B00E02586 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8D38DD6016BF134E0069AB47 /* AboutMeViewController.h */,
+				8D38DD6116BF134E0069AB47 /* AboutMeViewController.m */,
+				8DF910FA16CC89530082CE3A /* SkillsViewController.h */,
+				8DF910FB16CC89530082CE3A /* SkillsViewController.m */,
+				8D38DD6716BF134E0069AB47 /* ExperienceViewController.h */,
+				8D38DD6816BF134E0069AB47 /* ExperienceViewController.m */,
+				8DDD325F16C1BD0D003F09FE /* EmploymentDetailViewController.h */,
+				8DDD326016C1BD0D003F09FE /* EmploymentDetailViewController.m */,
+				8D2F353A16C95DBB00E97FAD /* ContactViewController.h */,
+				8D2F353B16C95DBB00E97FAD /* ContactViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		8DDFC10B16D3090500E02586 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8DDD326216C1EFED003F09FE /* EmploymentCell.h */,
+				8DDD326316C1EFED003F09FE /* EmploymentCell.m */,
+				8D32C25A16D148E7002679DA /* AboutHeaderCell.h */,
+				8D32C25B16D148E7002679DA /* AboutHeaderCell.m */,
+				8DDD327E16C416F2003F09FE /* ResponsibilitiesCell.h */,
+				8DDD327F16C416F3003F09FE /* ResponsibilitiesCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		8DDFC10C16D3091C00E02586 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8D38DD5A16BF134D0069AB47 /* MainStoryboard_iPhone.storyboard */,
+				8DDFC10A16D3083B00E02586 /* View Controllers */,
+				8DDFC10B16D3090500E02586 /* Cells */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		8DDFC10D16D3094100E02586 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				8DF910FD16CD9BDB0082CE3A /* DataHandler.h */,
+				8DF910FE16CD9BDB0082CE3A /* DataHandler.m */,
+				8DDD326516C208DD003F09FE /* Job.h */,
+				8DDD326616C208DD003F09FE /* Job.m */,
+			);
+			name = Data;
 			sourceTree = "<group>";
 		};
 		8DF9110016CD9DCC0082CE3A /* Images */ = {
@@ -387,7 +411,6 @@
 				8D38DD5716BF134D0069AB47 /* Default@2x.png in Resources */,
 				8D38DD5916BF134D0069AB47 /* Default-568h@2x.png in Resources */,
 				8D38DD5C16BF134D0069AB47 /* MainStoryboard_iPhone.storyboard in Resources */,
-				8D38DD5F16BF134E0069AB47 /* MainStoryboard_iPad.storyboard in Resources */,
 				8D38DD6416BF134E0069AB47 /* first.png in Resources */,
 				8D38DD6616BF134E0069AB47 /* first@2x.png in Resources */,
 				8D38DD6B16BF134E0069AB47 /* second.png in Resources */,
@@ -464,7 +487,6 @@
 				8DF910FC16CC89530082CE3A /* SkillsViewController.m in Sources */,
 				8DF910FF16CD9BDB0082CE3A /* DataHandler.m in Sources */,
 				8D32C25C16D148E7002679DA /* AboutHeaderCell.m in Sources */,
-				8DDFC0FE16D1872A00E02586 /* AboutDetailCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,14 +523,6 @@
 				8D38DD5B16BF134D0069AB47 /* en */,
 			);
 			name = MainStoryboard_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		8D38DD5D16BF134E0069AB47 /* MainStoryboard_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8D38DD5E16BF134E0069AB47 /* en */,
-			);
-			name = MainStoryboard_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		8D38DD7D16BF134E0069AB47 /* InfoPlist.strings */ = {

@@ -8,7 +8,6 @@
 
 #import "AboutMeViewController.h"
 #import "AboutHeaderCell.h"
-#import "AboutDetailCell.h"
 #import "DataHandler.h"
 
 
@@ -29,17 +28,9 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark UITableView methods
-
-//- (void)tableView:(UITableView *)tableview willDisplayCell:(EmploymentCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    UIColor *color = ((indexPath.row % 2) == 0) ? [UIColor clearColor] : [UIColor colorWithRed: 215.0/255.0 green: 215.0/255.0 blue: 215.0/255.0 alpha:1];
-//    cell.backgroundColor = color;
-//    tableview.separatorColor = [[UIColor alloc] initWithRed:0 green:0 blue:0 alpha:0.5];
-//}
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -48,41 +39,32 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-
-    if (indexPath.row % 2) {
-        AboutDetailCell *cell = (AboutDetailCell*)[tableView dequeueReusableCellWithIdentifier:@"AboutDetailCell"];
+    AboutHeaderCell *cell = (AboutHeaderCell*)[tableView dequeueReusableCellWithIdentifier:@"AboutHeaderCell"];
         
-        if (cell == nil) {
-            cell = [[AboutDetailCell alloc] init];
-        }
-        [cell.answerLabel setText:[[self.aboutArray objectAtIndex:(indexPath.row/2)] valueForKey:@"Answer"]];
-        return cell;
-    } else {
-        AboutHeaderCell *cell = (AboutHeaderCell*)[tableView dequeueReusableCellWithIdentifier:@"AboutHeaderCell"];
-        
-        if (cell == nil) {
-            cell = [[AboutHeaderCell alloc] init];
-        }
-        [cell.headerLabel setText:[[self.aboutArray objectAtIndex:(indexPath.row/2)] valueForKey:@"Question"]];
-        return cell;
+    if (cell == nil) {
+        cell = [[AboutHeaderCell alloc] init];
     }
-    return nil;
+    [cell.answerLabel setText:[[self.aboutArray objectAtIndex:(indexPath.row)] valueForKey:@"Answer"]];
+    [cell.questionLabel setText:[[self.aboutArray objectAtIndex:(indexPath.row)] valueForKey:@"Question"]];
+    return cell;
+    
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (!(indexPath.row % 2)) {
-        return 22;
-    } else {
-        return [self getHeightOfLabel:[[self.aboutArray objectAtIndex:(indexPath.row/2)] valueForKey:@"Answer"]
-                           ofFontSize:14
-                       withConstraint:CGSizeMake(280, 9999)] + 8;
-    }
+    
+    CGFloat questionLabelHeight = [self getHeightOfLabel:[[self.aboutArray objectAtIndex:indexPath.row] valueForKey:@"Question"]
+                                              ofFontSize:14
+                                          withConstraint:CGSizeMake(280, 9999)];
+    CGFloat answerLabelHeight = [self getHeightOfLabel:[[self.aboutArray objectAtIndex:indexPath.row] valueForKey:@"Answer"]
+                                      ofFontSize:14
+                                  withConstraint:CGSizeMake(280, 9999)];
+    return questionLabelHeight + answerLabelHeight + 30;
 }
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 2 * [self.aboutArray count];
+    return [self.aboutArray count];
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section

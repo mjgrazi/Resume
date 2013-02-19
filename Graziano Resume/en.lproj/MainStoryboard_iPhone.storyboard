@@ -21,14 +21,14 @@
                                 </items>
                             </navigationBar>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="wallpaper.png" translatesAutoresizingMaskIntoConstraints="NO" id="gHV-gW-G7I"/>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="6vW-jl-AdG">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="82" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="6vW-jl-AdG">
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AboutHeaderCell" id="SsJ-yl-FQk" customClass="AboutHeaderCell">
-                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AboutHeaderCell" rowHeight="82" id="SsJ-yl-FQk" customClass="AboutHeaderCell">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="82"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="81"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Header Text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mAi-cb-8Sq">
@@ -39,29 +39,10 @@
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                            </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
-                                        <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="mAi-cb-8Sq" secondAttribute="trailing" constant="20" type="default" id="9CG-a1-Ybz"/>
-                                            <constraint firstItem="mAi-cb-8Sq" firstAttribute="leading" secondItem="SsJ-yl-FQk" secondAttribute="leading" constant="20" type="default" id="lzv-RC-qrD"/>
-                                            <constraint firstItem="mAi-cb-8Sq" firstAttribute="top" secondItem="SsJ-yl-FQk" secondAttribute="top" constant="11" id="yjf-FF-jdf"/>
-                                        </constraints>
-                                        <connections>
-                                            <outlet property="headerLabel" destination="mAi-cb-8Sq" id="owW-72-0tx"/>
-                                        </connections>
-                                    </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AboutDetailCell" id="hSC-d6-7AW" customClass="AboutDetailCell">
-                                        <rect key="frame" x="0.0" y="66" width="320" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Details text" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="VRx-Yx-1Fe">
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Details text" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="HZI-VC-oa9">
                                                     <constraints>
-                                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="1000" type="user" id="q2u-K8-OzD"/>
-                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" type="user" id="vIr-gj-lFB"/>
+                                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="1000" type="user" id="K6H-7Q-4EA"/>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" type="user" id="LFk-xY-5AS"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -71,12 +52,16 @@
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <constraints>
-                                            <constraint firstItem="VRx-Yx-1Fe" firstAttribute="top" secondItem="hSC-d6-7AW" secondAttribute="top" constant="11" id="NXb-DQ-sdE"/>
-                                            <constraint firstItem="VRx-Yx-1Fe" firstAttribute="leading" secondItem="hSC-d6-7AW" secondAttribute="leading" constant="20" type="default" id="RiM-DB-AYs"/>
-                                            <constraint firstAttribute="trailing" secondItem="VRx-Yx-1Fe" secondAttribute="trailing" constant="20" type="default" id="k7z-wq-vYC"/>
+                                            <constraint firstAttribute="trailing" secondItem="mAi-cb-8Sq" secondAttribute="trailing" constant="20" type="default" id="9CG-a1-Ybz"/>
+                                            <constraint firstItem="HZI-VC-oa9" firstAttribute="top" secondItem="mAi-cb-8Sq" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="J1h-Tc-fnf"/>
+                                            <constraint firstItem="mAi-cb-8Sq" firstAttribute="leading" secondItem="SsJ-yl-FQk" secondAttribute="leading" constant="20" type="default" id="lzv-RC-qrD"/>
+                                            <constraint firstAttribute="trailing" secondItem="HZI-VC-oa9" secondAttribute="trailing" constant="20" type="default" id="pTw-JX-XXM"/>
+                                            <constraint firstItem="HZI-VC-oa9" firstAttribute="top" secondItem="SsJ-yl-FQk" secondAttribute="top" constant="40" id="qCp-kG-YtA"/>
+                                            <constraint firstItem="HZI-VC-oa9" firstAttribute="leading" secondItem="SsJ-yl-FQk" secondAttribute="leading" constant="20" type="default" id="shl-oe-b3W"/>
                                         </constraints>
                                         <connections>
-                                            <outlet property="answerLabel" destination="VRx-Yx-1Fe" id="Qj4-Ng-L4f"/>
+                                            <outlet property="answerLabel" destination="HZI-VC-oa9" id="NXB-X6-Noe"/>
+                                            <outlet property="questionLabel" destination="mAi-cb-8Sq" id="efE-Cg-xuu"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -691,16 +676,11 @@ Software is just one of my passions. I also enjoy many sports, especially curlin
         <image name="wallpaper.png" width="320" height="480"/>
     </resources>
     <classes>
-        <class className="AboutDetailCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AboutDetailCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="answerLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
         <class className="AboutHeaderCell" superclassName="UITableViewCell">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AboutHeaderCell.h"/>
             <relationships>
-                <relationship kind="outlet" name="headerLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="answerLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="questionLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
         <class className="AboutMeViewController" superclassName="UIViewController">

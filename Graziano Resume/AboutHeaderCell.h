@@ -10,6 +10,7 @@
 
 @interface AboutHeaderCell : UITableViewCell
 
-@property (strong, nonatomic) IBOutlet UILabel *headerLabel;
+@property (strong, nonatomic) IBOutlet UILabel *questionLabel;
+@property (strong, nonatomic) IBOutlet UILabel *answerLabel;
 
 @end
